@@ -178,3 +178,11 @@ footer a{color:var(--sand)}footer a:hover{color:var(--kaolin)}
   .titem img{width:auto;height:80px}
   .titem .pub{font-size:12px;max-width:72px}
 }
+/* hero button: jump to What we're building */
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+#build{scroll-margin-top:24px}
+.hero-cta{margin:28px 0 0}
+.btn-jump{display:inline-flex;align-items:center;gap:10px;padding:12px 20px;border-radius:4px;background:var(--kaolin);color:var(--peat);font-family:var(--head);font-weight:700;font-size:17px;line-height:1.2;text-decoration:none;transition:background .15s}
+.btn-jump:hover{background:var(--paper);color:var(--peat)}
+.btn-jump:focus-visible{outline:2px solid var(--kaolin);outline-offset:3px}
