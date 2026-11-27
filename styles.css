@@ -160,3 +160,20 @@ footer a{color:var(--sand)}footer a:hover{color:var(--kaolin)}
 .principles h4{margin:0;letter-spacing:-0.02em;font-family:var(--head);font-weight:700;font-size:19px;line-height:1.3;color:var(--peat)}
 .principles p{margin-top:6px}
 .close-note{margin-top:24px}
+/* timeline on phones and tablets: horizontal, swipe sideways */
+.tscroll{position:relative}
+@media (max-width:899px){
+  .tscroll{margin-top:32px;margin-right:calc(-1 * var(--gut-r));overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:none;padding-bottom:4px;-webkit-mask-image:linear-gradient(to right,#000 calc(100% - 48px),transparent);mask-image:linear-gradient(to right,#000 calc(100% - 48px),transparent)}
+  .tscroll::-webkit-scrollbar{display:none}
+  .tscroll + .tcredit{margin-top:16px}
+  .tstrip{margin-top:0;flex-direction:row;align-items:flex-start;gap:18px;padding:0 40px 0 0;width:max-content}
+  .tstrip::before{left:0;right:40px;top:34px;bottom:auto;width:auto;height:2px}
+  .tyear{align-items:center;gap:0}
+  .tyear .yr{height:20px;font-size:15px}
+  .tyear .tdot{position:static;margin:8px 0 12px}
+  .tyear .tdot--lead{margin:5px 0 9px}
+  .tcovers{flex-wrap:nowrap;justify-content:center;gap:10px}
+  .titem{width:auto;align-items:center;text-align:center;gap:6px}
+  .titem img{width:auto;height:80px}
+  .titem .pub{font-size:12px;max-width:72px}
+}
