@@ -168,7 +168,8 @@ footer a{color:var(--sand)}footer a:hover{color:var(--kaolin)}
   .tscroll + .tcredit{margin-top:16px}
   .tstrip{margin-top:0;flex-direction:row;align-items:flex-start;gap:18px;padding:0 40px 0 0;width:max-content}
   .tstrip::before{left:0;right:40px;top:34px;bottom:auto;width:auto;height:2px}
-  .tyear{align-items:center;gap:0}
+  .tyear{flex:0 0 auto;align-items:center;gap:0}
+  .titem{flex:0 0 auto}
   .tyear .yr{height:20px;font-size:15px}
   .tyear .tdot{position:static;margin:8px 0 12px}
   .tyear .tdot--lead{margin:5px 0 9px}
